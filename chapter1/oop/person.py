@@ -34,6 +34,7 @@ def save_to_shelve(file_name, people):
 
 def find_person(shelve_name):
     person_db = shelve.open(shelve_name)
+
     fields = ['name', 'age', 'job', 'pay']
     max_len = max(len(f) for f in fields)
     while True:
